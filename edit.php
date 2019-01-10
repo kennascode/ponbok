@@ -48,17 +48,11 @@ while($res = mysqli_fetch_array($result))
 	<link rel="stylesheet" href="bootstrap-4.0.0-beta.3-dist/jss/bootstrap.js">
 	<script src="bootstrap-4.0.0-beta.3-dist/jquery/jquery.min.js"></script>
 	<script src="bootstrap-4.0.0-beta.3-dist/js/bootstrap.bundle.min.js"></script>
-	<style>
-		body {
-			background-image: url(img/3.jpg);
-			color: white;
-			width: 100%;
-		}
-	</style>
+	<link rel="stylesheet" href="pon.css" type="text/css">
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-success ">
-		<img src="img/2.jpg" width="90" height="60" alt="img/call.png"/>&nbsp;&nbsp;&nbsp;
+		<img src="img/12.png" width="90" height="60" alt="img/call.png"/>&nbsp;&nbsp;&nbsp;
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -84,37 +78,39 @@ while($res = mysqli_fetch_array($result))
 	</nav>
 
 <br/><br/>
-<h3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Edit Contacts </h3><br/><br/>
+<center>
+<h3> Edit Contacts </h3><br/><br/>
+</center>
 <center>
 	<div class="container">
 		<form name="form1" method="post" action="edit.php">
 			<div class="form-group row">
-				<label for="colFormLabel" class="col-sm-2 col-form-label">firstname</label>
-					<div class="col-sm-5">
+				<label for="colFormLabel" class="col-sm-4 col-form-label">First Name</label>
+					<div class="col-sm-8">
 						<input type="text" name="firstname" value="<?php echo $firstname;?>" class="form-control" id="colFormLabel">
 					</div>
 			</div>
 			<div class="form-group row">
-				<label for="colFormLabel" class="col-sm-2 col-form-label">lastname</label>
-					<div class="col-sm-5">
+				<label for="colFormLabel" class="col-sm-4 col-form-label">Last Name</label>
+					<div class="col-sm-8">
 						<input type="text" name="lastname" value="<?php echo $lastname;?>" class="form-control" id="colFormLabel">
 					</div>
 			</div>
 			<div class="form-group row">
-				<label for="colFormLabel" class="col-sm-2 col-form-label">phone_number</label>
-					<div class="col-sm-5">
+				<label for="colFormLabel" class="col-sm-4 col-form-label">Phone_number</label>
+					<div class="col-sm-8">
 						<input type="text" name="phone_number" value="<?php echo $phone_number;?>" class="form-control" id="colFormLabel">
 					</div>
 			</div>
 			<div class="form-group row">
-				<label for="colFormLabel" class="col-sm-2 col-form-label">email</label>
-					<div class="col-sm-5">
+				<label for="colFormLabel" class="col-sm-4 col-form-label">Email</label>
+					<div class="col-sm-8">
 						<input type="text" name="email" value="<?php echo $email;?>" class="form-control" id="colFormLabel">
 					</div>
 			</div>
 			<div class="form-group row">
-				<label for="colFormLabel" class="col-sm-2 col-form-label">address</label>
-					<div class="col-sm-5">
+				<label for="colFormLabel" class="col-sm-4 col-form-label">Address</label>
+					<div class="col-sm-8">
 						<input type="text" name="address" value="<?php echo $address;?>" class="form-control" id="colFormLabel">
 					</div>
 			</div>
@@ -122,7 +118,7 @@ while($res = mysqli_fetch_array($result))
 				<label for="colFormLabel" class="col-sm-2 col-form-label"></label>	
 					<div class="col-sm-10">
 						<input type="hidden" name="id" value=<?php echo $_GET['id'];?>>
-							<button class="btn btn-outline-success" type="submit" name="update" value="Update">update</button>
+							<button class="btn btn-outline-success" type="submit" name="update" value="Update">Update</button>
 					</div>
 			</div>
 		</form>

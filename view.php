@@ -21,18 +21,12 @@ $result = mysqli_query($db, "SELECT * FROM contacts WHERE login_id=".$_SESSION['
 	<link rel="stylesheet" href="bootstrap-4.0.0-beta.3-dist/jss/bootstrap.js">
 	<script src="bootstrap-4.0.0-beta.3-dist/jquery/jquery.min.js"></script>
 	<script src="bootstrap-4.0.0-beta.3-dist/js/bootstrap.bundle.min.js"></script>
-	<style>
-		body {
-			background-image: url(img/3.jpg);
-			color: white;
-			width: 100%;
-		}
-	</style>
+	<link rel="stylesheet" href="pon.css" type="text/css">
 </head>
 <body>
 		<div class="container">
 					<nav class="navbar navbar-expand-lg navbar-success bg-gray">
-						<img src="img/2.jpg" width="90" height="60" alt="img/call.png"/>&nbsp;&nbsp;&nbsp;
+						<img src="img/12.png" width="90" height="60" alt="img/.png"/>&nbsp;&nbsp;&nbsp;
 							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 								<span class="navbar-toggler-icon"></span>
 							</button>
@@ -57,7 +51,10 @@ $result = mysqli_query($db, "SELECT * FROM contacts WHERE login_id=".$_SESSION['
 							</div>
 					</nav>
 		</div>
-
+		<center>
+<font color="white" face="forte"><h1>Contack List</h1></font>
+		</center>
+	<br/>
 	<div class="container">
 		<table class="table">
 			<tr bgcolor='gray'>

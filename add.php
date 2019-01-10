@@ -9,24 +9,19 @@ if(!isset($_SESSION['valid'])) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Add Data</title>
+	<title>Add</title>
 	<link rel="stylesheet" href="bootstrap-4.0.0-beta.3-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="bootstrap-4.0.0-beta.3-dist/jss/bootstrap.js">
 	<script src="bootstrap-4.0.0-beta.3-dist/jquery/jquery.min.js"></script>
 	<script src="bootstrap-4.0.0-beta.3-dist/js/bootstrap.bundle.min.js"></script>
-	<style>
-		body {
-			background-image: url(img/3.jpg);
-			color: white;
-			width: 100%;
-		}
-	</style>
+	<link rel="stylesheet" href="pon.css" type="text/css">
+
 </head>
 
 <body>
 		<div class="container">
 					<nav class="navbar navbar-expand-lg navbar-success bg-transparent">
-						<img src="img/2.jpg" width="80" height="60" alt="img/call.png"/>&nbsp;&nbsp;&nbsp;
+						<img src="img/12.png" width="80" height="60" alt="img/call.png"/>&nbsp;&nbsp;&nbsp;
 							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 								<span class="navbar-toggler-icon"></span>
 							</button>
@@ -71,37 +66,39 @@ if(isset($_POST['Submit'])) {
 		header('location: view.php');
 	} 
 ?>
-<h3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add Contacts </h3><br/>
-
+<center>
+<h3> Add Contacts </h3><br/>
+</center>
+<center>
 <div class="container">
 	<form action="add.php" method="post" name="form1">
 		<div class="form-group row">
-			<label for="colFormLabel" class="col-sm-2 col-form-label">firstname</label>
-				<div class="col-sm-5">
+			<label for="colFormLabel" class="col-sm-4 col-form-label">First Name</label>
+				<div class="col-sm-8">
 					<input type="text" name="firstname" class="form-control" id="colFormLabel" required>
 				</div>
 		</div>
 		<div class="form-group row">
-			<label for="colFormLabel" class="col-sm-2 col-form-label">lastname</label>
-				<div class="col-sm-5">
+			<label for="colFormLabel" class="col-sm-4 col-form-label">Last Name</label>
+				<div class="col-sm-8">
 					<input type="text" name="lastname" class="form-control" id="colFormLabel" required>
 				</div>
 		</div>
 		<div class="form-group row">
-			<label for="colFormLabel" class="col-sm-2 col-form-label">phone_number</label>
-				<div class="col-sm-5">
+			<label for="colFormLabel" class="col-sm-4 col-form-label">Phone_Number</label>
+				<div class="col-sm-8">
 					<input type="number" name="phone_number" class="form-control" id="colFormLabel" required>
 				</div>
 		</div>
 		<div class="form-group row">
-			<label for="colFormLabel" class="col-sm-2 col-form-label">email</label>
-				<div class="col-sm-5">
+			<label for="colFormLabel" class="col-sm-4 col-form-label">Email</label>
+				<div class="col-sm-8">
 					<input type="email" name="email" class="form-control" id="colFormLabel" required>
 				</div>
 		</div>
 		<div class="form-group row">
-			<label for="colFormLabel" class="col-sm-2 col-form-label">address</label>
-				<div class="col-sm-5">
+			<label for="colFormLabel" class="col-sm-4 col-form-label">Address</label>
+				<div class="col-sm-8">
 					<input type="text" name="address" class="form-control" id="colFormLabel" required>
 				</div>
 		</div>
@@ -116,6 +113,6 @@ if(isset($_POST['Submit'])) {
 	</form>
 </div>
 </br>
-	
+	</center>
 </body>
 </html>

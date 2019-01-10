@@ -7,19 +7,13 @@
 	<link rel="stylesheet" href="bootstrap-4.0.0-beta.3-dist/jss/bootstrap.js">
 	<script src="bootstrap-4.0.0-beta.3-dist/jquery/jquery.min.js"></script>
 	<script src="bootstrap-4.0.0-beta.3-dist/js/bootstrap.bundle.min.js"></script>
-	<style>
-		body {
-			background-image: url(img/3.jpg);
-			color: white;
-			width: 100%;
-		}
-	</style>
+	<link rel="stylesheet" href="pon.css" type="text/css">
 </head>
 <body>
 
 	<div class="container">
 				<nav class="navbar navbar-expand-lg navbar-success bg-transparent">
-					<img src="img/2.jpg" width="90" height="60" alt="img/call.png"/>
+					<img src="img/12.png" width="90" height="60"/>
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
 						</button>
@@ -66,34 +60,43 @@ if(isset($_POST['submit'])) {
 										<h2><font face="forte">Registration Form</font></h2>
 									</div><br/>
 										<div class="row">
-											<div class="col-md-6 mb-3">
-												<label for="validationServer01">first name</label>
+											<div class="col-md-10 mb-6">
+												<label for="validationServer01">First Name</label>
 													<input type="text" name="firstname" class="form-control is-valid" id="validationServer01"  required>
 											</div>&nbsp;
-											<div class="col-md-6 mb-3">
-												<label for="validationServer01">last name</label>
+											<div class="col-md-10 mb-6">
+												<label for="validationServer01">Last Name</label>
 													<input type="text" name="lastname" class="form-control is-valid" id="validationServer01"  required>
 											</div>
 										</div>
 										<div class="row">
-											<div class="col-md-6 mb-3">
-												<label for="validationServer01">email</label>
+											<div class="col-md-10 mb-6">
+												<label for="validationServer01">Email</label>
 													<input type="email" name="email" class="form-control is-valid" id="validationServer01"  required>
 											</div>
 										</div>
 										<div class="row">
-											<div class="col-md-6 mb-3">
-												<label for="validationServer01">username</label>
+											<div class="col-md-10 mb-6">
+												<label for="validationServer01">Username</label>
 													<input type="text" name="username" class="form-control is-valid" id="validationServer01"  required>
 											</div>
 										</div>
 										<div class="row">
-											<div class="col-md-6 mb-3">
-												<label for="validationServer01">password</label>
+											<div class="col-md-10 mb-6">
+												<label for="validationServer01">Password</label>
 													<input type="password" name="password" class="form-control is-valid" id="validationServer01"  required>
 											</div>
 										</div>
+<<<<<<< HEAD
 										<button class="btn btn-outline-red" type="submit" name="submit" value="Submit">register</button><br/><br/>
+=======
+										<br/>
+										<center>
+									<div class="col-md-10 mb-6">
+										<button class="btn btn-outline-" type="submit" name="submit" value="Submit">register</button><br/><br/>
+									</div>	
+										</center>
+>>>>>>> fourth commit
 											<p>
 												Already have an account ? &nbsp; <a class="btn btn-sm btn-outline-info" href="login.php" role="button">log in</a>
 											</p>
