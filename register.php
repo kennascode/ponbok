@@ -93,7 +93,7 @@ if(isset($_POST['submit'])) {
 													<input type="password" name="password" class="form-control is-valid" id="validationServer01"  required>
 											</div>
 										</div>
-										<button class="btn btn-outline-success" type="submit" name="submit" value="Submit">register</button><br/><br/>
+										<button class="btn btn-outline-red" type="submit" name="submit" value="Submit">register</button><br/><br/>
 											<p>
 												Already have an account ? &nbsp; <a class="btn btn-sm btn-outline-info" href="login.php" role="button">log in</a>
 											</p>
